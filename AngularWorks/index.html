@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <div ng-controller="StoreController as s">
+        <div ng-repeat="p in s.products">
+            <h1>{{p.name}}</h1>
+            <em>
+                <p>
+                    <span>{{p.price}}</span>
+                    {{p.description}}
+                </p>
+            </em>
+        </div>
+    </div>
+   
+</body>
+</html>
